@@ -1,3 +1,108 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Raleway, sans-serif;
+}
+
+.container {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {  
+	display: block;
+	content: "";
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+}
+
+.logo {
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 40px;
+	color: #ffffff;
+	float: left;
+}
+
+.logoWord {
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 40px;
+	color: #27c7ab;
+}
+
+nav {
+	float: right;
+}
+
+.mainMenu {
+	display: inline-block;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 40px; 
+	color: #ffffff;
+}
+
+
+
+#mainSlider {
+	display: inline-block;
+	width: 100%;
+	height: 500px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c4c4c4+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #c4c4c4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#c4c4c4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#c4c4c4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c4c4c4',GradientType=0 ); /* IE6-9 */
+
+}
+
+.sliderContent {
+	display: inline-block;
+}
+
+img.sliderGfx {
+	display: inline-block;
+}
+
+.sliderTxt h1 {
+	display: inline-block;
+	font-family: Raleway;
+	color: #000000;
+	font-size: 40px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 500;
+	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	text-align: left;
+}
+
+.sliderTxt p {
+	display: inline-block;
+	font-family: Raleway;
+	color: #000000;
+	font-size: 14px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 400;
+	line-height: 21.37px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	text-align: center;
+}
+
+.sliderNavNext, .sliderNavPrev {
+	display: inline-block;
+	font-size: 78px;
+	color: #24baa0;
+}
