@@ -49,22 +49,49 @@ nav {
 	float: right;
 }
 
-.mainMenu {
+.mainMenu p {
 	display: inline-block;
 	font-family: Raleway;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 40px; 
 	color: #ffffff;
+	margin-left: 25px;
 }
 
+.dropdown-content p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 5px;
+}
 
+.menuItem {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	width: 120px;
+	height: 96px;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* główny slider */
 
 #mainSlider {
-	display: inline-block;
 	width: 100%;
 	height: 500px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c4c4c4+100 */
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #c4c4c4 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  #ffffff 0%,#c4c4c4 100%); /* Chrome10-25,Safari5.1-6 */
@@ -73,26 +100,41 @@ nav {
 
 }
 
-.sliderContent {
+.next, .prev {
+	vertical-align: middle;
 	display: inline-block;
+	font-family: Raleway;
+	color: #24baa0;
+	font-size: 78px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 300;
+	line-height: 20px; /* Przybliżenie (wynika z podstawienia czcionki) */
 }
 
-img.sliderGfx {
+.sliderImg {
 	display: inline-block;
+	margin-top: 100px;
+	vertical-align: middle;
+}
+
+.sliderTxt {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .sliderTxt h1 {
-	display: inline-block;
 	font-family: Raleway;
 	color: #000000;
 	font-size: 40px; /* Przybliżenie (wynika z podstawienia czcionki) */
 	font-weight: 500;
 	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
-	text-align: left;
+	text-align: center;
+	
+
 }
 
 .sliderTxt p {
-	display: inline-block;
+	width: 421px;
+	height: 90px;
 	font-family: Raleway;
 	color: #000000;
 	font-size: 14px; /* Przybliżenie (wynika z podstawienia czcionki) */
@@ -101,8 +143,16 @@ img.sliderGfx {
 	text-align: center;
 }
 
-.sliderNavNext, .sliderNavPrev {
-	display: inline-block;
-	font-size: 78px;
-	color: #24baa0;
+.sliderButton {
+	background-color: #24baa0;
+	width: 264px;
+	height: 53px;
+	border: none;
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 24px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 500;
+	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	text-align: center;
 }
+
