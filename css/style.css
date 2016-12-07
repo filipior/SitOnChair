@@ -57,6 +57,7 @@ nav {
 }
 
 .mainMenu p {
+	position: relative;
 	display: inline-block;
 	font-family: Raleway;
 	font-size: 14px;
@@ -67,13 +68,6 @@ nav {
 	margin-left: 50px;
 }
 
-.dropdown-content p {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 20px;
-	margin-top: 5px;
-}
-
 .menuItem {
 	display: inline-block;
 }
@@ -81,13 +75,21 @@ nav {
 .dropdown-content {
 	display: none;
 	position: absolute;
+/*
+	top: 50px;
+	left: 50px;
+*/
 	background-color: black;
 	width: 120px;
 	height: 96px;
 	color: white;
-	padding: 5px;
-	margin-top: 10px;
-	margin-bottom: 5px;
+	padding: 15px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	
 	
 }
 
@@ -100,12 +102,11 @@ nav {
 #mainSlider {
 	width: 100%;
 	height: 500px;
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #c4c4c4 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#c4c4c4 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #ffffff 0%,#c4c4c4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c4c4c4',GradientType=0 ); /* IE6-9 */
-	
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,  #ffffff 0%, #c4c4c4 100%); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#c4c4c4 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#c4c4c4 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c4c4c4',GradientType=0 ); 
 }
 
 .slider {
@@ -283,6 +284,16 @@ h3:after {
 	content: "";
 }
 
+.galleryArticleLabel h3:after {
+	width: 138px;
+	height: 7px;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	background-color: #27c7ab;
+	margin: 0;
+	content: "";
+}
 
 
 /* SEKCJA CENNIK */
@@ -416,7 +427,7 @@ h2:after {
 	position: relative;
 	left: 0;
 	right: 0;
-	top: 45px;
+	top: 40px;
 	font-family: Raleway;
 	color: #27c7ab;
 	font-size: 16px; 
@@ -614,3 +625,175 @@ h2:after {
 	line-height: 34px;
 }
 	
+/* POCZĄTEK SEKCJI KONTAKT */
+
+#contact {
+	width: 100%;
+	height: 545px;
+	background-color: #ffffff;
+}
+
+.contactLeftColumn {
+	
+	width: 65%;
+	float: left;
+/*	border: 1px solid red;*/
+}
+
+.contactRightColumn {
+	
+	width: 35%;
+	float: right;
+/*	border: 1px solid red;*/
+}
+
+.contactForm {
+	margin-top: 100px;
+	font-family: Raleway;
+}
+
+.contactForm input {
+	font-family: Raleway;
+	color: #cacaca;
+	font-size: 33px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 300;
+	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	text-align: left;
+	width: 633px;
+	height: 64px;
+	margin-bottom: 30px;
+	
+}
+
+.contactForm [placeholder] {
+	padding-left: 10px;
+}
+
+.contactForm textarea {
+	font-family: Raleway;
+	color: #cacaca;
+	font-size: 33px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 300;
+	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	text-align: left;
+	width: 631px;
+	height: 187px;
+	resize: none;
+	padding-top: 15px;
+}
+
+.contactImage {
+	position: relative;
+	top: 80px;
+	bottom: 0;
+	left: 70px;
+	right: 0;
+	
+
+}
+
+.contactCheckBox {
+	position: relative;
+	top: 100px;
+	left: 33px;
+	display: inline-block;
+	font-size: 0px;
+	
+}
+
+
+
+.checkBox {
+ 	position: absolute;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	border: 1px solid #a9e4da;
+}
+
+.checkBox img {
+ 	position: absolute;
+	top: 2px;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+}
+
+.checkBoxDescription {
+	display: inline-block;
+	position: absolute;
+	left: 60px;
+	width: 320px;
+	height: 92px;
+	font-family: Raleway;
+	color: #aeaeae;
+	font-size: 20px; 
+	font-weight: 300;
+	line-height: 22px;
+	text-align: left;
+}
+
+.contactButton button {
+	position: relative;
+	top: 170px;
+	left: 30px;
+	background-color: #24baa0;
+	width: 343px;
+	height: 71px;
+	font-family: Raleway;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+}
+
+
+footer {
+	width: 100%;
+	height: 110px;
+	
+}
+
+.footerCopyright {
+	
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-family: Raleway;
+	color: #9b9b9b;
+	font-size: 16px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 500;
+	line-height: 110px; /* Przybliżenie (wynika z podstawienia czcionki) */
+
+}
+
+.socialIcons {
+	float: right;
+	position: relative;
+	top: 35px;
+	left: 110px;
+}
+
+.footerLogo {
+	
+	width: 30%;
+	float: right;
+	text-align: right;
+	font-family: Raleway;
+	color:  #9b9b9b;
+	font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+	font-weight: 600;
+	line-height: 110px;/* Przybliżenie (wynika z podstawienia czcionki) */
+}
+
+
+
+
