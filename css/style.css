@@ -8,13 +8,12 @@
 }
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, Arial, sans-serif;
 }
 
 .container {
 	width: 1060px;
 	margin: 0 auto;
-/*	border: 1px solid red;*/
 }
 
 .clearfix:before, .clearfix:after {  
@@ -23,7 +22,7 @@ body {
 	clear: both;
 }
 
-/* HEADER */
+/*---------------------------------------- HEADER */
 
 header {
 	width: 100%;
@@ -33,64 +32,68 @@ header {
 
 .logo {
 	letter-spacing: 0.07em;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	line-height: 40px;
 	color: #ffffff;
-	float: left;
-	
+	float: left;	
 }
 
 .logoWord {
 	letter-spacing: 0.07em;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	line-height: 40px;
-	color: #27c7ab;
-	
+	color: #27c7ab;	
 }
 
 nav {
 	float: right;
 }
 
-.mainMenu p {
-	position: relative;
+.menuItem {
 	display: inline-block;
-	font-family: Raleway;
+	position: relative;
+	font-family: Raleway, Arial, sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.07em;
 	font-weight: 700;
 	line-height: 40px; 
 	color: #ffffff;
 	margin-left: 50px;
-}
-
-.menuItem {
-	display: inline-block;
+	text-transform: uppercase;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-/*
-	top: 50px;
-	left: 50px;
-*/
+	top: 55px;
+	bottom: 0;
+	right: 0;
+	left: -25px;
 	background-color: black;
 	width: 120px;
 	height: 96px;
 	color: white;
-	padding: 15px;
-	margin-top: 0px;
-	margin-bottom: 10px;
+	text-transform: capitalize;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 30px;
-	
-	
+	padding: 10px;
+	padding-top: 5px;
+}
+
+.dropdown-content:after {
+	position: absolute;
+	top:-9px;
+	left: 50px;
+	width: 18px;
+	height: 18px;
+	content: "";
+	background-color: #000000;
+	transform: rotate(45deg);	
 }
 
 .dropdown:hover .dropdown-content {
@@ -117,10 +120,9 @@ nav {
 
 .next, .prev {
 	
-	
 	display: inline-block;
 	vertical-align: middle;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #24baa0;
 	font-size: 78px;
 	font-weight: 300;
@@ -157,7 +159,7 @@ nav {
 }
 
 .sliderTxt h1 {
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #000000;
 	font-size: 40px;
 	font-weight: 500;
@@ -168,15 +170,14 @@ nav {
 
 .h1Word {
 	color: #24baa0;
-	font-weight: 700;
-	
+	font-weight: 700;	
 }
 
 .sliderTxt p {
 	position: relative;
 	width: 421px;
 	height: 90px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
 	font-weight: 400;
@@ -193,16 +194,16 @@ nav {
 	height: 53px;
 	margin-top: 30px;
 	border-radius: 10px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #ffffff;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 53px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
-
-/* GALERIA */
+/* ---------------------------------------- GALERIA */
 
 #gallery {
 	width: 100%;
@@ -222,9 +223,7 @@ nav {
 .galleryPhotoLabel {
 	position: absolute;
 	margin-bottom: 15px;
-	bottom: 40px;
-	
-	
+	bottom: 40px;		
 }
 
 .galleryPhotoLabelGlass {
@@ -243,7 +242,6 @@ nav {
 	width: 338px;
 	height: 260px;
 	margin-top: 30px;
-	
 }
 
 .galleryArticleLabel h3 {
@@ -261,11 +259,10 @@ nav {
 	position: absolute;
 	left: 25px;
 	top: 75px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #565656;
 	margin-right: 20px;
 }
-
 
 h3 {
 	font-size: 16px;
@@ -295,8 +292,7 @@ h3:after {
 	content: "";
 }
 
-
-/* SEKCJA CENNIK */
+/* ---------------------------------------- CENNIK */
 
 #pricing {
 	width: 100%;
@@ -306,12 +302,11 @@ h3:after {
 
 .sectionLabel {
 	position: relative;
-	
 	top: 40px;
 }
 
 .sectionLabel h2 {
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #575757;
 	font-size: 22px; 
 	font-weight: 500;
@@ -330,8 +325,6 @@ h2:after {
 	margin: 0;
 	content: "";
 }
-
-
 
 .boxFeatured {
 	background-color: #27c7ab;
@@ -405,7 +398,7 @@ h2:after {
 	left: -10px;
 	right: 0;
 	margin: 0 auto;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #27c7ab;
 	font-size: 45px; 
 	font-weight: 700;
@@ -414,10 +407,10 @@ h2:after {
 
 .boxFeaturedPriceSmall {
 	position: relative;
-	top: -25px;
+	top: -35px;
 	left: 35px;
 	right: 0;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #27c7ab;
 	font-size: 16px; 
 	font-weight: 700;
@@ -428,7 +421,7 @@ h2:after {
 	left: 0;
 	right: 0;
 	top: 40px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #27c7ab;
 	font-size: 16px; 
 	font-weight: 700;
@@ -444,7 +437,7 @@ h2:after {
 	width: 122px;
 	height: 34px;
 	border: none;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #27c7ab;
 	font-size: 16px; 
 	font-weight: 500;
@@ -457,7 +450,7 @@ h2:after {
 	right: 0;
 	top: 220px;
 	margin: 0 auto;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #9e9e9e;
 	font-size: 24px;
 	font-weight: 400;
@@ -552,7 +545,7 @@ h2:after {
 	left: 5px;
 	right: 0;
 	margin: 0 auto;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #c2c2c2;
 	font-size: 45px; 
 	font-weight: 700;
@@ -564,7 +557,7 @@ h2:after {
 	top: -25px;
 	left: -10px;
 	right: 0;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #c2c2c2;
 	font-size: 16px; 
 	font-weight: 700;
@@ -575,7 +568,7 @@ h2:after {
 	left: 0;
 	right: 0;
 	top: 45px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #c6c6c6;
 	font-size: 16px; 
 	font-weight: 700;
@@ -588,7 +581,7 @@ h2:after {
 	right: 0;
 	top: 220px;
 	margin: 0 auto;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #939393;
 	font-size: 24px;
 	font-weight: 400;
@@ -618,14 +611,14 @@ h2:after {
 	width: 122px;
 	height: 34px;
 	border: none;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #ffffff;
 	font-size: 16px; 
 	font-weight: 500;
 	line-height: 34px;
 }
 	
-/* POCZĄTEK SEKCJI KONTAKT */
+/* ---------------------------------------- KONTAKT */
 
 #contact {
 	width: 100%;
@@ -634,52 +627,50 @@ h2:after {
 }
 
 .contactLeftColumn {
-	
 	width: 65%;
 	float: left;
-/*	border: 1px solid red;*/
 }
 
 .contactRightColumn {
-	
 	width: 35%;
 	float: right;
-/*	border: 1px solid red;*/
 }
 
 .contactForm {
 	margin-top: 100px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 }
 
 .contactForm input {
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #cacaca;
-	font-size: 33px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-size: 33px;
 	font-weight: 300;
-	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	line-height: 20px;
 	text-align: left;
 	width: 633px;
 	height: 64px;
 	margin-bottom: 30px;
-	
+	border: 1px solid #a3e2d7;
 }
 
 .contactForm [placeholder] {
 	padding-left: 10px;
+	color: #cacaca;
 }
 
 .contactForm textarea {
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #cacaca;
-	font-size: 33px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-size: 33px;
 	font-weight: 300;
-	line-height: 20.371px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	line-height: 20px; 
 	text-align: left;
 	width: 631px;
 	height: 187px;
 	resize: none;
 	padding-top: 15px;
+	border: 1px solid #a3e2d7;
 }
 
 .contactImage {
@@ -688,8 +679,6 @@ h2:after {
 	bottom: 0;
 	left: 70px;
 	right: 0;
-	
-
 }
 
 .contactCheckBox {
@@ -697,11 +686,8 @@ h2:after {
 	top: 100px;
 	left: 33px;
 	display: inline-block;
-	font-size: 0px;
-	
+	font-size: 0px;	
 }
-
-
 
 .checkBox {
  	position: absolute;
@@ -729,7 +715,7 @@ h2:after {
 	left: 60px;
 	width: 320px;
 	height: 92px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #aeaeae;
 	font-size: 20px; 
 	font-weight: 300;
@@ -744,7 +730,7 @@ h2:after {
 	background-color: #24baa0;
 	width: 343px;
 	height: 71px;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #ffffff;
 	font-size: 34px;
 	font-weight: 700;
@@ -755,8 +741,9 @@ h2:after {
 	border-radius: 10px;
 }
 
+/*---------------------------------------- FOOTER */
 
-footer {
+#mainFooter {
 	width: 100%;
 	height: 110px;
 	
@@ -767,12 +754,11 @@ footer {
 	width: 50%;
 	float: left;
 	text-align: left;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color: #9b9b9b;
-	font-size: 16px; /* Przybliżenie (wynika z podstawienia czcionki) */
+	font-size: 16px;
 	font-weight: 500;
-	line-height: 110px; /* Przybliżenie (wynika z podstawienia czcionki) */
-
+	line-height: 110px;
 }
 
 .socialIcons {
@@ -787,13 +773,13 @@ footer {
 	width: 30%;
 	float: right;
 	text-align: right;
-	font-family: Raleway;
+	font-family: Raleway, Arial, sans-serif;
 	color:  #9b9b9b;
-	font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+	font-size: 20px;
 	font-weight: 600;
-	line-height: 110px;/* Przybliżenie (wynika z podstawienia czcionki) */
+	line-height: 110px;
 }
 
-
-
-
+.logoWordFooter {
+	font-weight: 800;
+}
